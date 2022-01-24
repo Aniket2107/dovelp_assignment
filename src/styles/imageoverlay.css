@@ -1,0 +1,86 @@
+.main-overlay {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #000000cc;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.overlay-content .overlay-cancel {
+  position: absolute;
+  top: 3rem;
+  right: 34%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 2rem;
+}
+
+.overlay-content i {
+  font-size: 1.6rem;
+  color: #69707d;
+}
+
+.overlay-content i:focus {
+  color: var(--primary-orange);
+}
+
+.overlay-content-image {
+  max-width: 40rem;
+  border-radius: 1.5rem;
+}
+
+.overlay-content-thumbnail-image {
+  max-width: 7rem;
+  max-height: 7rem;
+  border-radius: 1rem;
+}
+
+.overlay-content-thumbnail-container {
+  padding: 1rem;
+  min-width: 40rem;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.imgage-div {
+  position: relative;
+}
+
+.imgage-btn {
+  background-color: #fff;
+  border-radius: 50%;
+  color: var(--primary-orange);
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 40%;
+}
+
+.imgage-div .image-back {
+  margin-left: -2rem;
+}
+
+.imgage-div .image-ahead {
+  margin-left: -2rem;
+}
